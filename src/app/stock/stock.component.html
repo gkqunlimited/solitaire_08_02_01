@@ -1,0 +1,9 @@
+<div id="stock">
+  <div id="container">
+    <div *ngFor="let card of stock ; first as isFirst"
+        [class.card-right]="isFirst" [class.grabbable]="isFirst" [attr.id]="'w'"
+        [style.backgroundImage]="'url(' + card.card() + ')'" [draggable]="isFirst"
+        (dragstart)="onDragStart($event, isFirst)" (dblclick)="onDoubleClick($event, isFirst)">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div id="shadow"></div>
+<div class="maneuver" 
+  *ngFor="let col of maneuver; let i = index" (dragover)="onDragOver($event)" 
+  (drop)="onDrop($event)">
+    <div *ngIf="col.length == 0" class="card border2 border" [attr.id]="'c' + i">
+    </div>
+    <div class="card" *ngFor="let card of col; last as isLast; let j = index" 
+        [attr.id]="'c' + i + 'r' + j" [class.border1]="!isLast" 
+        [class.border2]="isLast" [class.click]="isLast"
+        [class.grab]="card.isFaceUp" [draggable]="card.isFaceUp" 
+        (dragstart)="onDragStart($event)" (click)="onClick($event, isLast)" 
+        (dblclick)="onDoubleClick($event, isLast)" [style.backgroundImage]="'url(' + card.card() + ')'">
+    </div>
+</div>

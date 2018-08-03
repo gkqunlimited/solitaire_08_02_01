@@ -1,0 +1,10 @@
+<div id="foundations">
+    <div class="foundation" *ngFor="let foundation of foundation; let i = index" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+        <div *ngIf="foundation.length == 0" class="card border1 border" [attr.id]="'f' + i">
+        </div>
+        <div class="card border1" *ngFor="let card of foundation; let j = index; last as isLast" [attr.id]="'f' + i + j" 
+        [style.backgroundImage]="'url(' + card.card() + ')'" [class.grab]="isLast" [hidden]="!isLast" [draggable]="isLast" 
+        (dragstart)="onDragStart($event, isLast)">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+.border {
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.border1 {
+    height: 150px;
+    overflow: show;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.card {
+    margin: auto;
+    position: relative;
+    width: 100px; 
+}
+
+.grab {
+    cursor: -webkit-grab;
+}
+
+#foundations {
+    width: calc(400% / 7);
+    height: 100px;
+    float: right;
+}
+
+.foundation {
+    position: relative;
+    float: left;
+    width: calc(100% / 4);
+    height: 100px;
+}

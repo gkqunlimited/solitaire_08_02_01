@@ -1,0 +1,25 @@
+.card-right {
+    position: relative;
+    width: 100px; 
+    height: 150px;
+    overflow: show;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin: 0 auto;
+}
+
+#container {
+    display: inline-block;
+}
+
+.grabbable:hover {
+    cursor: -webkit-grab;
+}
+
+#stock {
+    width: calc(100% / 7);
+    height: 100px;
+    float: left;
+    text-align: center;
+}

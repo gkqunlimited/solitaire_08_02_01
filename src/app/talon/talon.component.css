@@ -1,0 +1,32 @@
+.border {
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.card {
+    margin: auto;
+    position: relative;
+    width: 100px; 
+}
+
+.container {
+    height: 150px;
+    overflow: show;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#talon {
+    width: calc(100% / 7);
+    height: 100px;
+    float: left;
+}
+
+#talon:hover {
+    cursor: pointer;
+}
+
+
+
+
+

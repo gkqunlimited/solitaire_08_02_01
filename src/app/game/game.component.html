@@ -1,0 +1,11 @@
+<div id="gameField">
+    <app-talon [talon]="talon" (clickTalon)="onTalonClick($event)"></app-talon>
+    <app-stock [stock]="stock" (clickStock)="onDragStart($event)"
+    (clickStock2x)="onDoubleClick($event)"></app-stock>
+    <div id="dummy"></div>
+    <app-foundation [foundation]="foundation" (fromFound)="onDragStart($event)"
+    (toFound)="onDrop($event)"></app-foundation>
+    <app-maneuver [maneuver]="maneuver" (fromMan)="onDragStart($event)" 
+    (toMan)="onDrop($event)" (clickMan)="onManeuverClick($event)"
+    (clickMan2x)="onDoubleClick($event)"></app-maneuver>
+</div>

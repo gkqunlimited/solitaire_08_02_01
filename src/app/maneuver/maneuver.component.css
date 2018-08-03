@@ -1,0 +1,46 @@
+.border {
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.border1 {
+    height: 17px;
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.border2 {
+    height: 150px;
+    overflow: show;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.card {
+    top:80px;
+    margin: auto;
+    position: relative;
+    width: 100px; 
+}
+
+.grab:hover {
+    cursor: -webkit-grab;
+}
+
+.maneuver {
+    position: relative;
+    float: left;
+    width: calc(100% / 7);
+    height: 100px;
+}
+
+#shadow {
+    position: absolute;
+    top: -9999999px;
+    opacity: 1;
+}
+
+.click:hover {
+    cursor: pointer;
+}

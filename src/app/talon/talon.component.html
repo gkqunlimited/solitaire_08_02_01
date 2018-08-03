@@ -1,0 +1,7 @@
+<div id="talon" (click)="onClick()">
+  <div *ngIf="talon.length == 0" class="card container border">
+  </div>
+  <div class="card container" [style.backgroundImage]="'url(' + talon[0].card() + ')'" 
+      *ngIf="talon[0]" >
+  </div>
+</div>

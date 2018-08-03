@@ -1,0 +1,11 @@
+#dummy {
+    width: calc(100% / 7);
+    box-sizing: border-box;
+    height: 100px;
+    float: left;
+}
+
+#gameField {
+    width: 80%;
+    margin: auto;
+}
